@@ -35,6 +35,18 @@
             this.Creating_Shop = new System.Windows.Forms.Panel();
             this.Creating_Restaurant = new System.Windows.Forms.Panel();
             this.Creating_Recreation = new System.Windows.Forms.Panel();
+            this.View_Local_Page = new System.Windows.Forms.Panel();
+            this.Mirar_List_Final = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Locales = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Hour_Recreation = new System.Windows.Forms.ComboBox();
@@ -82,29 +94,31 @@
             this.Create_Restaurant = new System.Windows.Forms.Label();
             this.Create_Shop = new System.Windows.Forms.Label();
             this.Create_Cinema = new System.Windows.Forms.Label();
+            this.Back_Inicio = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Local_List = new System.Windows.Forms.Label();
             this.View_Local = new System.Windows.Forms.Label();
             this.Create_Local = new System.Windows.Forms.Label();
             this.Titulo = new System.Windows.Forms.Label();
-            this.Back_Inicio = new System.Windows.Forms.Label();
-            this.View_Local_Page = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.Locales = new System.Windows.Forms.ComboBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.no = new System.Windows.Forms.ComboBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.panel_Inicio.SuspendLayout();
             this.panel1.SuspendLayout();
             this.Creating_Cinema.SuspendLayout();
             this.Creating_Shop.SuspendLayout();
             this.Creating_Restaurant.SuspendLayout();
             this.Creating_Recreation.SuspendLayout();
+            this.View_Local_Page.SuspendLayout();
+            this.Mirar_List_Final.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CreateNewCin_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.View_Local_Page.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_Inicio
@@ -222,6 +236,141 @@
             this.Creating_Recreation.Size = new System.Drawing.Size(802, 450);
             this.Creating_Recreation.TabIndex = 20;
             this.Creating_Recreation.Visible = false;
+            // 
+            // View_Local_Page
+            // 
+            this.View_Local_Page.Controls.Add(this.Mirar_List_Final);
+            this.View_Local_Page.Controls.Add(this.panel2);
+            this.View_Local_Page.Controls.Add(this.Locales);
+            this.View_Local_Page.Controls.Add(this.label11);
+            this.View_Local_Page.Location = new System.Drawing.Point(0, 0);
+            this.View_Local_Page.Name = "View_Local_Page";
+            this.View_Local_Page.Size = new System.Drawing.Size(800, 453);
+            this.View_Local_Page.TabIndex = 20;
+            this.View_Local_Page.Visible = false;
+            // 
+            // Mirar_List_Final
+            // 
+            this.Mirar_List_Final.Controls.Add(this.label21);
+            this.Mirar_List_Final.Controls.Add(this.pictureBox9);
+            this.Mirar_List_Final.Controls.Add(this.pictureBox8);
+            this.Mirar_List_Final.Controls.Add(this.pictureBox7);
+            this.Mirar_List_Final.Controls.Add(this.pictureBox6);
+            this.Mirar_List_Final.Controls.Add(this.pictureBox5);
+            this.Mirar_List_Final.Controls.Add(this.label18);
+            this.Mirar_List_Final.Controls.Add(this.listBox1);
+            this.Mirar_List_Final.Location = new System.Drawing.Point(0, 0);
+            this.Mirar_List_Final.Name = "Mirar_List_Final";
+            this.Mirar_List_Final.Size = new System.Drawing.Size(803, 453);
+            this.Mirar_List_Final.TabIndex = 19;
+            this.Mirar_List_Final.Visible = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::El_Lugar_Parte_8.Properties.Resources.dito5;
+            this.pictureBox9.Location = new System.Drawing.Point(666, 237);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(108, 95);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 22;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::El_Lugar_Parte_8.Properties.Resources.Dito4;
+            this.pictureBox8.Location = new System.Drawing.Point(493, 212);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(108, 95);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 21;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::El_Lugar_Parte_8.Properties.Resources.dito3;
+            this.pictureBox7.Location = new System.Drawing.Point(612, 87);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(108, 95);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 20;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::El_Lugar_Parte_8.Properties.Resources.ditos2;
+            this.pictureBox6.Location = new System.Drawing.Point(379, 87);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(108, 95);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 19;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::El_Lugar_Parte_8.Properties.Resources.dito1;
+            this.pictureBox5.Location = new System.Drawing.Point(331, 237);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(108, 95);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 18;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label18.Font = new System.Drawing.Font("Limelight", 20F);
+            this.label18.Location = new System.Drawing.Point(681, 396);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(107, 41);
+            this.label18.TabIndex = 17;
+            this.label18.Text = "Back";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(34, 68);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(244, 344);
+            this.listBox1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.panel2.Location = new System.Drawing.Point(21, 122);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(761, 233);
+            this.panel2.TabIndex = 18;
+            // 
+            // Locales
+            // 
+            this.Locales.FormattingEnabled = true;
+            this.Locales.Items.AddRange(new object[] {
+            "8:30 - 19:30",
+            "9:00 - 20:00",
+            "10:00 - 18:00",
+            "8:30 - 23:30",
+            "12:00 - 17:30",
+            "10:30 - 19:30"});
+            this.Locales.Location = new System.Drawing.Point(292, 69);
+            this.Locales.Name = "Locales";
+            this.Locales.Size = new System.Drawing.Size(224, 28);
+            this.Locales.TabIndex = 17;
+            this.Locales.TextChanged += new System.EventHandler(this.Locales_TextChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label11.Font = new System.Drawing.Font("Limelight", 20F);
+            this.label11.Location = new System.Drawing.Point(667, 386);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(107, 41);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Back";
+            this.label11.Click += new System.EventHandler(this.label11_Click_1);
             // 
             // label17
             // 
@@ -697,6 +846,18 @@
             this.Create_Cinema.Text = "Cinema";
             this.Create_Cinema.Click += new System.EventHandler(this.Create_Cinema_Click_1);
             // 
+            // Back_Inicio
+            // 
+            this.Back_Inicio.AutoSize = true;
+            this.Back_Inicio.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Back_Inicio.Font = new System.Drawing.Font("Limelight", 20F);
+            this.Back_Inicio.Location = new System.Drawing.Point(12, 400);
+            this.Back_Inicio.Name = "Back_Inicio";
+            this.Back_Inicio.Size = new System.Drawing.Size(107, 41);
+            this.Back_Inicio.TabIndex = 15;
+            this.Back_Inicio.Text = "Back";
+            this.Back_Inicio.Click += new System.EventHandler(this.label11_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::El_Lugar_Parte_8.Properties.Resources.finalpoint;
@@ -716,6 +877,7 @@
             this.Local_List.Size = new System.Drawing.Size(140, 31);
             this.Local_List.TabIndex = 16;
             this.Local_List.Text = "Local_List";
+            this.Local_List.Click += new System.EventHandler(this.Local_List_Click);
             // 
             // View_Local
             // 
@@ -749,79 +911,16 @@
             this.Titulo.TabIndex = 13;
             this.Titulo.Text = "Local_Maker";
             // 
-            // Back_Inicio
+            // label21
             // 
-            this.Back_Inicio.AutoSize = true;
-            this.Back_Inicio.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Back_Inicio.Font = new System.Drawing.Font("Limelight", 20F);
-            this.Back_Inicio.Location = new System.Drawing.Point(12, 400);
-            this.Back_Inicio.Name = "Back_Inicio";
-            this.Back_Inicio.Size = new System.Drawing.Size(107, 41);
-            this.Back_Inicio.TabIndex = 15;
-            this.Back_Inicio.Text = "Back";
-            this.Back_Inicio.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // View_Local_Page
-            // 
-            this.View_Local_Page.Controls.Add(this.no);
-            this.View_Local_Page.Controls.Add(this.panel2);
-            this.View_Local_Page.Controls.Add(this.Locales);
-            this.View_Local_Page.Controls.Add(this.label11);
-            this.View_Local_Page.Location = new System.Drawing.Point(0, 0);
-            this.View_Local_Page.Name = "View_Local_Page";
-            this.View_Local_Page.Size = new System.Drawing.Size(800, 453);
-            this.View_Local_Page.TabIndex = 20;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label11.Font = new System.Drawing.Font("Limelight", 20F);
-            this.label11.Location = new System.Drawing.Point(667, 386);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(107, 41);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "Back";
-            this.label11.Click += new System.EventHandler(this.label11_Click_1);
-            // 
-            // Locales
-            // 
-            this.Locales.FormattingEnabled = true;
-            this.Locales.Items.AddRange(new object[] {
-            "8:30 - 19:30",
-            "9:00 - 20:00",
-            "10:00 - 18:00",
-            "8:30 - 23:30",
-            "12:00 - 17:30",
-            "10:30 - 19:30"});
-            this.Locales.Location = new System.Drawing.Point(273, 69);
-            this.Locales.Name = "Locales";
-            this.Locales.Size = new System.Drawing.Size(224, 28);
-            this.Locales.TabIndex = 17;
-            this.Locales.TextChanged += new System.EventHandler(this.Locales_TextChanged);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.panel2.Location = new System.Drawing.Point(133, 122);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(515, 233);
-            this.panel2.TabIndex = 18;
-            // 
-            // no
-            // 
-            this.no.FormattingEnabled = true;
-            this.no.Items.AddRange(new object[] {
-            "8:30 - 19:30",
-            "9:00 - 20:00",
-            "10:00 - 18:00",
-            "8:30 - 23:30",
-            "12:00 - 17:30",
-            "10:30 - 19:30"});
-            this.no.Location = new System.Drawing.Point(273, 386);
-            this.no.Name = "no";
-            this.no.Size = new System.Drawing.Size(224, 28);
-            this.no.TabIndex = 20;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Limelight", 20F);
+            this.label21.Location = new System.Drawing.Point(59, 14);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(185, 41);
+            this.label21.TabIndex = 23;
+            this.label21.Text = "Local List";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // Form1
             // 
@@ -846,13 +945,20 @@
             this.Creating_Restaurant.PerformLayout();
             this.Creating_Recreation.ResumeLayout(false);
             this.Creating_Recreation.PerformLayout();
+            this.View_Local_Page.ResumeLayout(false);
+            this.View_Local_Page.PerformLayout();
+            this.Mirar_List_Final.ResumeLayout(false);
+            this.Mirar_List_Final.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CreateNewCin_Return)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.View_Local_Page.ResumeLayout(false);
-            this.View_Local_Page.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -921,7 +1027,15 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox Locales;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox no;
+        private System.Windows.Forms.Panel Mirar_List_Final;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label21;
     }
 }
 

@@ -389,9 +389,9 @@ namespace El_Lugar_Parte_8
                     }
                     else
                     {
-                        Owner_Restaurant.Text = "";
-                        Id_Restaurant.Text = "";
-                        Hour_Restaurant.Text = "";
+                        Owner_Recreation.Text = "";
+                        Id_Recreation.Text = "";
+                        Hour_Recreation.Text = "";
 
                         MessageBox.Show("Shop Succefully Created");
                     }
@@ -502,13 +502,12 @@ namespace El_Lugar_Parte_8
                 {
                     panel2.Controls.Remove(item);
                 }
-
+                remobeLab.Clear();
             }
 
 
             for(int i=0; i< Locales.Items.Count; i++)
             {
-                MessageBox.Show(Locales.Items[i].ToString());
                 if(Locales.Items[i].ToString() == Locales.Text)
                 {
                     num = i;
@@ -535,7 +534,7 @@ namespace El_Lugar_Parte_8
                         {
                             p += " "+item;
                         }
-                        l.Text = t.get_Name2() + " Id: " + t.get_id() + " Schedules: " + t.get_Schedules2();
+                        l.Text = "Local: "+ t.get_Name2() + " Id: " + t.get_id() + " Schedules: " + t.get_Schedules2();
                         l.Font = new Font("Limelight", 12 ,FontStyle.Bold);
                         panel2.Controls.Add(l);
 
@@ -560,7 +559,7 @@ namespace El_Lugar_Parte_8
                         Label aux = new Label();
                         l.Location = new Point(50, 50);
                         l.Width = 500;
-                        l.Text = c.get_Name2() + " Id: " + c.get_id() + " Schedules: " + c.get_Schedules2();
+                        l.Text = "Local: " + c.get_Name2() + " Id: " + c.get_id() + " Schedules: " + c.get_Schedules2();
                         l.Font = new Font("Limelight", 12, FontStyle.Bold);
                         panel2.Controls.Add(l);
                         aux.Text = "Rooms: "+ c.room().ToString();
@@ -584,7 +583,7 @@ namespace El_Lugar_Parte_8
                         Label aux = new Label();
                         l.Location = new Point(50, 50);
                         l.Width = 500;
-                        l.Text = rec.get_Name2() + " Id: " + rec.get_id() + " Schedules: " + rec.get_Schedules2();
+                        l.Text = "Local: " + rec.get_Name2() + " Id: " + rec.get_id() + " Schedules: " + rec.get_Schedules2();
                         l.Font = new Font("Limelight", 12, FontStyle.Bold);
                         panel2.Controls.Add(l);
                         aux.Text = " ";
@@ -607,7 +606,7 @@ namespace El_Lugar_Parte_8
                         Label aux = new Label();
                         l.Location = new Point(50, 50);
                         l.Width = 500;
-                        l.Text = res.get_Name2() + " Id: " + res.get_id() + " Schedules: " + res.get_Schedules2();
+                        l.Text = "Local: " + res.get_Name2() + " Id: " + res.get_id() + " Schedules: " + res.get_Schedules2();
                         l.Font = new Font("Limelight", 12, FontStyle.Bold);
                         panel2.Controls.Add(l);
                         aux.Text = "Exclusive Tables: " + res.Ex().ToString();
@@ -624,6 +623,92 @@ namespace El_Lugar_Parte_8
 
 
 
+
+        }
+        List<string> RemoveList35 = new List<string>();
+        private void Local_List_Click(object sender, EventArgs e)
+        {
+            if (RemoveList35.Count > 0)
+            {
+                foreach (string item in RemoveList35)
+                {
+                    listBox1.Items.Remove(item);
+                }
+            }
+
+
+
+
+            List<Tienda> shop = GetShop(this, new EventArgs());
+            List<Cine> cinema = GetCine(this, new EventArgs());
+            List<Recreacion> recreation = GetRecreation(this, new EventArgs());
+            List<Restaurante> restaurant = GetRestaurant(this, new EventArgs());
+            if (shop.Count != 0)
+            {
+                foreach (Tienda t in shop)
+                {
+                    listBox1.Items.Add("Local:   " + t.get_Name2() + " ID: " + t.get_id());
+                    RemoveList35.Add("Local:   " + t.get_Name2() + " ID: " + t.get_id());
+                }
+            }
+            if (cinema.Count != 0)
+            {
+                foreach (Cine c in cinema)
+                {
+                    listBox1.Items.Add("Local:   " + c.get_Name2() + " ID: " + c.get_id());
+                    RemoveList35.Add("Local:   " + c.get_Name2() + " ID: " + c.get_id());
+                }
+            }
+
+            if (recreation.Count != 0)
+            {
+                foreach (Recreacion rec in recreation)
+                {
+                    listBox1.Items.Add("Local:   " + rec.get_Name2() + " ID: " + rec.get_id());
+                    RemoveList35.Add("Local:   " + rec.get_Name2() + " ID: " + rec.get_id());
+                }
+            }
+            if (restaurant.Count != 0)
+            {
+                foreach (Restaurante res in restaurant)
+                {
+
+                    listBox1.Items.Add("Local:   " + res.get_Name2() + " ID: " + res.get_id());
+                    RemoveList35.Add("Local:   " + res.get_Name2() + " ID: " + res.get_id());
+                }
+            }
+
+            panel1.Visible = true;
+            Creating_Cinema.Visible = true;
+            Creating_Shop.Visible = true;
+            Creating_Restaurant.Visible = true;
+            Creating_Recreation.Visible = true;
+            View_Local_Page.Visible = true;
+            Mirar_List_Final.Visible = true;
+
+
+        }
+
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+
+
+
+            panel1.Visible = false;
+            Creating_Cinema.Visible = false;
+            Creating_Shop.Visible = false;
+            Creating_Restaurant.Visible = false;
+            Creating_Recreation.Visible = false;
+            View_Local_Page.Visible = false;
+            Mirar_List_Final.Visible = false;
+
+
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
 
         }
     }

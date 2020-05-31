@@ -95,7 +95,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\dito1.gif" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\point.gif" />
   </ItemGroup>
@@ -104,6 +106,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\finalpoint.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dito3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dito4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dito5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ditos2.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
