@@ -145,9 +145,10 @@
             this.panel1.Controls.Add(this.Create_Shop);
             this.panel1.Controls.Add(this.Create_Cinema);
             this.panel1.Controls.Add(this.Back_Inicio);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(803, 450);
+            this.panel1.Size = new System.Drawing.Size(803, 453);
             this.panel1.TabIndex = 18;
             this.panel1.Visible = false;
             // 
@@ -239,10 +240,12 @@
             // 
             // View_Local_Page
             // 
+            this.View_Local_Page.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("View_Local_Page.BackgroundImage")));
             this.View_Local_Page.Controls.Add(this.Mirar_List_Final);
             this.View_Local_Page.Controls.Add(this.panel2);
             this.View_Local_Page.Controls.Add(this.Locales);
             this.View_Local_Page.Controls.Add(this.label11);
+            this.View_Local_Page.ForeColor = System.Drawing.SystemColors.ControlText;
             this.View_Local_Page.Location = new System.Drawing.Point(0, 0);
             this.View_Local_Page.Name = "View_Local_Page";
             this.View_Local_Page.Size = new System.Drawing.Size(800, 453);
@@ -354,7 +357,7 @@
             "8:30 - 23:30",
             "12:00 - 17:30",
             "10:30 - 19:30"});
-            this.Locales.Location = new System.Drawing.Point(292, 69);
+            this.Locales.Location = new System.Drawing.Point(285, 68);
             this.Locales.Name = "Locales";
             this.Locales.Size = new System.Drawing.Size(224, 28);
             this.Locales.TabIndex = 17;
@@ -791,10 +794,10 @@
             // Label_Select_Create
             // 
             this.Label_Select_Create.AutoSize = true;
-            this.Label_Select_Create.Font = new System.Drawing.Font("Limelight", 25F);
+            this.Label_Select_Create.Font = new System.Drawing.Font("Limelight", 23F);
             this.Label_Select_Create.Location = new System.Drawing.Point(10, 30);
             this.Label_Select_Create.Name = "Label_Select_Create";
-            this.Label_Select_Create.Size = new System.Drawing.Size(778, 51);
+            this.Label_Select_Create.Size = new System.Drawing.Size(719, 47);
             this.Label_Select_Create.TabIndex = 12;
             this.Label_Select_Create.Text = "Select_What_You_Want_To_Create";
             // 
@@ -928,6 +931,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel_Inicio);
+            this.MaximumSize = new System.Drawing.Size(818, 497);
+            this.MinimumSize = new System.Drawing.Size(818, 497);
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "Form1";
